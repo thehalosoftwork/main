@@ -446,27 +446,35 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" placeholder=" Enter your full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" placeholder="Enter your email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone number">
-                    </div>
-                    <div class="form-group">
-                        <label for="project">Tell Us About Your Project *</label>
-                        <textarea id="project" placeholder="I need a website for my small bakery. Looking for something simple with about 5 pages, online ordering, and a contact form..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
-                </form>
-            </div>
+           <div class="contact-form">
+    <form action="https://formspree.io/f/xnjgvdpp" method="POST">
+
+        <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label>Tell Us About Your Project *</label>
+            <textarea name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%">
+            Send Message
+        </button>
+
+    </form>
+</div>
         </div>
     </section>
 
