@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaloSoft - Affordable Web & Mobile Development for Small Businesses</title>
+    <title>HaloSoft – We Build Digital Products That Grow Your Business</title>
+    <meta name="description" content="HaloSoft builds professional websites, mobile apps & digital systems for small businesses at startup-friendly prices. Agency quality, 50% less cost. Free consultation.">
+    <meta name="keywords" content="web development, mobile apps, e-commerce, UI/UX design, HaloSoft, affordable web development India">
+    <meta name="author" content="HaloSoft">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="HaloSoft – We Build Digital Products That Grow Your Business">
+    <meta property="og:description" content="Agency-quality websites & apps at startup-friendly prices. 90+ happy clients. Free consultation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehalosoftwork.github.io">
+    <meta property="og:image" content="logos/logo main.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HaloSoft – Digital Products That Grow Your Business">
+    <meta name="twitter:description" content="Agency-quality websites & apps at startup-friendly prices. 90+ happy clients.">
+    <meta name="twitter:image" content="logos/logo main.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="logos/favicon_io/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon_io/favicon-32x32.png">
@@ -11,536 +26,708 @@
     <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon_io/apple-touch-icon.png">
 </head>
 <body>
-    <!-- Navigation -->
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919491206255?text=Hi%20HaloSoft!%20I%27d%20like%20a%20free%20consultation." 
+   class="whatsapp-float" target="_blank" title="Chat on WhatsApp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<!-- Navigation -->
 <nav>
     <div class="nav-container">
-
         <div class="logo">
             <img src="logos/logo main.jpg" alt="HaloSoft Logo" class="logo-img">
             <span>HaloSoft</span>
         </div>
-
         <div class="nav-links" id="navLinks">
             <a href="#about" onclick="closeMenu()">About Us</a>
             <a href="#services" onclick="closeMenu()">Services</a>
             <a href="#pricing" onclick="closeMenu()">Pricing</a>
-            <a href="#contact" onclick="closeMenu()">Contact Us</a>
-            <button class="btn-primary" onclick="scrollToContact(); closeMenu()">Get Started</button>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+            <button class="btn-primary" onclick="scrollToContact(); closeMenu()">Get Started →</button>
         </div>
-
+        <div class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark mode" role="button">
+            <div class="toggle-track">
+                <div class="toggle-stars">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="toggle-clouds">
+                    <span></span><span></span>
+                </div>
+                <div class="toggle-thumb">
+                    <div class="toggle-sun"></div>
+                    <div class="toggle-moon"></div>
+                </div>
+            </div>
+        </div>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
-
     </div>
 </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>We Build Reliable Websites & Apps That Convert</h1>
-            <p>Our goal is simple: to design and develop reliable digital products with clear communication, transparent pricing, and a process you can trust—from planning to launch.</p>
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="scrollToContact()">Get Free Consultation</button>
-                <button class="btn-secondary" onclick="scrollToWork()">View Sample Projects</button>
-            </div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div><div class="hero-orb hero-orb-3"></div>
+    <div class="hero-content">
+        <!-- Trust badges -->
+        <div class="hero-trust-badges">
+            <span class="trust-badge"><span class="dot"></span> Available for new projects</span>
+            <span class="trust-badge">⚡ 2–4 week delivery</span>
+            <span class="trust-badge">✓ 90+ happy clients</span>
+            <span class="trust-badge">💬 Replies within 2 hrs</span>
         </div>
 
-        <div class="video-showcase">
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <video autoplay muted loop playsinline>
-                        <source src="logos/divine.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
+        <h1>
+            We Don't Just Build Websites —<br>
+            <span class="gradient-text">We Build Revenue Machines</span>
+        </h1>
+        <p class="hero-sub-rotate">Websites, apps &amp; digital systems that turn visitors into customers.</p>
 
-    <!-- Logos Section -->
-    <section class="logos-section">
-        <p>The Same Technologies Used by Top Tech Companies</p>
-
-        <div class="logos-scroll-container">
-            <div class="logos-track">
-                <div class="logo-item">
-                    <img src="logos/143.png" alt="React">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/144.png" alt="Node.js">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/145.png" alt="TypeScript">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/146.png" alt="Figma">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/147.png" alt="AWS">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/148.png" alt="Firebase">
-                </div>
-                <div class="logo-item">
-                    <img src="logos/149.png" alt="PostgreSQL">
-                </div>
-                <div class="logo-item"><img src="logos/143.png" alt=""></div>
-                <div class="logo-item"><img src="logos/144.png" alt=""></div>
-                <div class="logo-item"><img src="logos/145.png" alt=""></div>
-                <div class="logo-item"><img src="logos/146.png" alt=""></div>
-                <div class="logo-item"><img src="logos/147.png" alt=""></div>
-                <div class="logo-item"><img src="logos/148.png" alt=""></div>
-                <div class="logo-item"><img src="logos/149.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">100+</div>
-                <div class="stat-label">Projects Completed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">90+</div>
-                <div class="stat-label">Happy Clients</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">50%</div>
-                <div class="stat-label">Cost Savings</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support Available</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>At HaloSoft, we're passionate about empowering small businesses with professional web and mobile development solutions. Our mission is to make quality digital products accessible and affordable, helping businesses grow their online presence without breaking the bank.</p>
-                <p>We believe in transparent communication, honest pricing, and building lasting relationships with our clients. Every project we undertake is treated with the same dedication and attention to detail, ensuring you receive the best possible results.</p>
-                
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/company/thehalosoft/" target="_blank" class="social-link">
-                        <svg class="social-icon-img" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://www.instagram.com/thehalosoft" target="_blank" class="social-link">
-                        <svg class="social-icon-img" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        Instagram
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="feature-row">
-            <div class="feature-content">
-                <h2>Reliable Development, Transparent Costs</h2>
-                <p>We focus on delivering professional-quality web and application development with transparent, requirement-based pricing. You pay for what you need—no hidden costs, no unnecessary features.</p>
-                <button class="btn-primary" onclick="scrollToPricing()">View Pricing</button>
-            </div>
-            <div class="feature-image">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Affordable Development">
-            </div>
+        <div class="hero-buttons">
+            <button class="btn-primary" onclick="scrollToContact()">Get Free Consultation →</button>
+            <button class="btn-secondary" onclick="scrollToWork()">View Our Work</button>
         </div>
 
-        <div class="feature-row reverse">
-            <div class="feature-content">
-                <h2>Built Right, Delivered On Schedule</h2>
-                <p>Our streamlined development process focuses on clear timelines, efficient execution, and consistent communication—so your project is delivered on schedule with dependable results.</p>
-                <button class="btn-primary" onclick="scrollToContact()">Start Your Project</button>
+        <!-- Social proof -->
+        <div class="hero-social-proof">
+            <div class="avatar-stack">
+                <div class="av">RK</div>
+                <div class="av">SM</div>
+                <div class="av">AP</div>
+                <div class="av">+</div>
             </div>
-            <div class="feature-image">
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" alt="Fast Delivery">
-            </div>
-        </div>
-
-        <div class="feature-row">
-            <div class="feature-content">
-                <h2>Lifetime Support Included</h2>
-                <p>We include 3 months of post-launch support for fixes and minor updates. Additional support can be renewed as needed.</p>
-                <button class="btn-primary" onclick="scrollToContact()">Get in Touch</button>
-            </div>
-            <div class="feature-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Lifetime Support">
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="section-title">
-            <h2>What We Build</h2>
-            <p>Comprehensive digital solutions designed specifically for growing businesses.</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <span class="service-icon">🌐</span>
-                <h3>Custom Websites</h3>
-                <p>Beautiful, responsive websites that convert visitors into customers. Built with modern technology and optimized for search engines.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">📱</span>
-                <h3>Mobile Apps</h3>
-                <p>Native iOS and Android apps, or cross-platform solutions that work everywhere. Fast, reliable, and user-friendly.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🛒</span>
-                <h3>E-Commerce</h3>
-                <p>Complete online stores with payment processing, inventory management, and customer accounts. Start selling today.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">📊</span>
-                <h3>Business Dashboards</h3>
-                <p>Custom admin panels and analytics dashboards to track your metrics and manage your business efficiently.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🎨</span>
-                <h3>UI/UX Design</h3>
-                <p>Professional design services that create intuitive, engaging experiences your customers will love.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🔧</span>
-                <h3>Maintenance</h3>
-                <p>Ongoing updates, security patches, and improvements. Keep your digital presence fresh and secure.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <div class="section-title">
-            <h2>Our Work</h2>
-            <p>Explore some of our recent projects</p>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=600&fit=crop" alt="E-commerce Project">
-                </div>
-                <div class="project-info">
-                    <h3>E-Commerce Platform</h3>
-                    <p>Full-featured online store with inventory management and payment integration</p>
-                    <a href="https://thehalosoftwork.github.io/E-commerce/" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Mobile App Project">
-                </div>
-                <div class="project-info">
-                    <h3>Fitness Tracking App</h3>
-                    <p>Cross-platform mobile app with real-time analytics and social features</p>
-                    <a href="https://thehalosoftwork.github.io/FitTrack-/" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Business Dashboard">
-                </div>
-                <div class="project-info">
-                    <h3>Business Dashboard</h3>
-                    <p>Custom analytics platform for real-time business insights and reporting</p>
-                    <a href="https://thehalosoftwork.github.io/Business-Dashboard/" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="pricing">
-        <div class="section-title">
-            <h2>Pricing that fits your requirements</h2>
-            <p>Projects start from $500. Final pricing depends on scope and features.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <div class="pricing-title">Starter Website</div>
-                <span class="pricing-price-prefix">Starting from</span>
-                <div class="pricing-price">$500</div>
-                <ul class="pricing-features">
-                    <li>Small business websites</li>
-                    <li>5-page website</li>
-                    <li>Contact form</li>
-                    <li>Redesign or new build</li>
-                    <li>Mobile-friendly & fast</li>
-                </ul>
-                <button class="btn-primary" style="width: 100%;" onclick="scrollToContact()">Get Started</button>
-            </div>
-            <div class="pricing-card featured">
-                <span class="pricing-badge">Most Popular</span>
-                <div class="pricing-title">Professional Website</div>
-                <span class="pricing-price-prefix">Starting from</span>
-                <div class="pricing-price">$900</div>
-                <ul class="pricing-features">
-                    <li>More pages</li>
-                    <li>Custom design</li>
-                    <li>Custom UI/UX</li>
-                    <li>Advanced features</li>
-                    <li>Priority support</li>
-                    <li>Performance optimization</li>
-                </ul>
-                <button class="btn-primary" style="width: 100%;" onclick="scrollToContact()">Get Started</button>
-            </div>
-            <div class="pricing-card">
-                <div class="pricing-title">Advanced / Custom</div>
-                <div class="pricing-price" style="font-size: 36px;">Custom quote</div>
-                <ul class="pricing-features">
-                    <li>Unlimited pages</li>
-                    <li>E-commerce</li>
-                    <li>Custom features</li>
-                    <li>Web apps</li>
-                    <li>Integrations</li>
-                    <li>Dedicated support</li>
-                </ul>
-                <button class="btn-primary" style="width: 100%;" onclick="scrollToContact()">Get Started</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Join over 90 small businesses who've already made the leap. Let's build something amazing together without breaking your budget.</p>
-            <div class="cta-buttons">
-                <button class="btn-primary" onclick="scrollToContact()">Start Your Project</button>
-                <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Color Blocks -->
-    <div class="color-blocks">
-        <div class="color-block">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team Collaboration">
-            <div class="color-block-overlay">
-                <h3>Team Work</h3>
-                <p>Collaborative Development</p>
-            </div>
-        </div>
-        <div class="color-block">
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Innovation">
-            <div class="color-block-overlay">
-                <h3>Innovation</h3>
-                <p>Creative Solutions</p>
-            </div>
-        </div>
-        <div class="color-block">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Technology">
-            <div class="color-block-overlay">
-                <h3>Technology</h3>
-                <p>Cutting Edge Tools</p>
-            </div>
-        </div>
-        <div class="color-block">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop" alt="Success">
-            <div class="color-block-overlay">
-                <h3>Success</h3>
-                <p>Delivered Results</p>
-            </div>
+            <span class="stars-small">★★★★★</span>
+            <span>Trusted by 90+ business owners</span>
         </div>
     </div>
 
-    <!-- Info Section -->
-    <section class="info-section">
-        <div class="info-grid">
-            <div class="info-item">
-                <h3>Our Approach</h3>
-                <p>Writing for websites is both simple and complicated. We put real effort into making your content say exactly what you want, in words that resonate with your audience. Clear communication builds trust and drives results.</p>
-            </div>
-            <div class="info-item">
-                <h3>SEO Strategy</h3>
-                <p>Are you thinking about keywords you should rank for? Are you even ranking? Let's get you the additional information and tools to make informed decisions about your online visibility and grow your organic traffic.</p>
-            </div>
-            <div class="info-item">
-                <h3>User Experience</h3>
-                <p>There's a theory that people read in an F-form pattern, and this structure plays directly into how you should structure content on your website. We design with psychology and user behavior in mind.</p>
+    <div class="video-showcase">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="logos/divine.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="section-title">
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about working with HaloSoft</p>
+<!-- Tech Logos -->
+<section class="logos-section">
+    <p>Same technologies used by world-class companies</p>
+    <div class="logos-scroll-container">
+        <div class="logos-track">
+            <div class="logo-item"><img src="logos/143.png" alt="React"></div>
+            <div class="logo-item"><img src="logos/144.png" alt="Node.js"></div>
+            <div class="logo-item"><img src="logos/145.png" alt="TypeScript"></div>
+            <div class="logo-item"><img src="logos/146.png" alt="Figma"></div>
+            <div class="logo-item"><img src="logos/147.png" alt="AWS"></div>
+            <div class="logo-item"><img src="logos/148.png" alt="Firebase"></div>
+            <div class="logo-item"><img src="logos/149.png" alt="PostgreSQL"></div>
+            <div class="logo-item"><img src="logos/143.png" alt=""></div>
+            <div class="logo-item"><img src="logos/144.png" alt=""></div>
+            <div class="logo-item"><img src="logos/145.png" alt=""></div>
+            <div class="logo-item"><img src="logos/146.png" alt=""></div>
+            <div class="logo-item"><img src="logos/147.png" alt=""></div>
+            <div class="logo-item"><img src="logos/148.png" alt=""></div>
+            <div class="logo-item"><img src="logos/149.png" alt=""></div>
         </div>
-        <div class="faq-container">
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
-                    How long does a typical project take?
-                    <span>+</span>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item fade-up">
+            <div class="stat-number" data-count="100" data-suffix="+">100+</div>
+            <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item fade-up">
+            <div class="stat-number" data-count="90"  data-suffix="+">90+</div>
+            <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item fade-up">
+            <div class="stat-number" data-count="50"  data-suffix="%">50%</div>
+            <div class="stat-label">Cost vs Agencies</div>
+        </div>
+        <div class="stat-item fade-up">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Available</div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-content fade-up">
+            <h2>Built Different, Priced Fairly</h2>
+            <p>At HaloSoft, we're on a mission to give small businesses access to the same quality of digital products that big companies pay a premium for — without the agency price tag.</p>
+            <p>Every project comes with transparent communication, requirement-based pricing, and a team that genuinely cares about your results. We build it right, the first time.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/thehalosoft/" target="_blank" class="social-link">
+                    <svg class="social-icon-img" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.instagram.com/thehalosoft" target="_blank" class="social-link">
+                    <svg class="social-icon-img" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features-section">
+    <div class="feature-row fade-up">
+        <div class="feature-content">
+            <h2>Agency Quality. Startup-Friendly Pricing.</h2>
+            <p>We build professional-grade websites and apps at a fraction of what traditional agencies charge — with full transparency on scope, timeline, and cost from day one.</p>
+            <button class="btn-primary" onclick="scrollToPricing()">See Pricing →</button>
+        </div>
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Affordable Development">
+        </div>
+    </div>
+
+    <div class="feature-row reverse fade-up">
+        <div class="feature-content">
+            <h2>On-Time. Every Time.</h2>
+            <p>Our streamlined build process keeps projects moving — with milestone check-ins, clear timelines, and zero surprise delays. You'll always know where your project stands.</p>
+            <button class="btn-primary" onclick="scrollToContact()">Start Your Project →</button>
+        </div>
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" alt="Fast Delivery">
+        </div>
+    </div>
+
+    <div class="feature-row fade-up">
+        <div class="feature-content">
+            <h2>3 Months of Support, Included</h2>
+            <p>Every project ships with 3 months of post-launch support — bug fixes, minor updates, and guidance included at no extra cost. We don't disappear after launch.</p>
+            <button class="btn-primary" onclick="scrollToContact()">Let's Talk →</button>
+        </div>
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Support Included">
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services-section" id="services">
+    <div class="section-title fade-up">
+        <h2>What We Build</h2>
+        <p>End-to-end digital solutions crafted to grow your business and impress your customers.</p>
+    </div>
+    <div class="services-grid">
+        <div class="service-card fade-up">
+            <span class="service-icon">🌐</span>
+            <h3>Custom Websites</h3>
+            <p>Responsive, conversion-optimised websites built with modern tech and tuned for search engines — from landing pages to full multi-page builds.</p>
+        </div>
+        <div class="service-card fade-up">
+            <span class="service-icon">📱</span>
+            <h3>Mobile Apps</h3>
+            <p>Native iOS &amp; Android apps or cross-platform solutions that feel fast and native on every device your customers use.</p>
+        </div>
+        <div class="service-card fade-up">
+            <span class="service-icon">🛒</span>
+            <h3>E-Commerce</h3>
+            <p>Complete online stores with payment processing, inventory management, and customer accounts — ready to sell from day one.</p>
+        </div>
+        <div class="service-card fade-up">
+            <span class="service-icon">📊</span>
+            <h3>Business Dashboards</h3>
+            <p>Custom admin panels and analytics dashboards that give you real-time visibility into your metrics and operations.</p>
+        </div>
+        <div class="service-card fade-up">
+            <span class="service-icon">🎨</span>
+            <h3>UI/UX Design</h3>
+            <p>Thoughtful, user-tested design that guides visitors toward action — clean, modern, and built to convert.</p>
+        </div>
+        <div class="service-card fade-up">
+            <span class="service-icon">🔧</span>
+            <h3>Maintenance</h3>
+            <p>Ongoing updates, security patches, and performance improvements to keep your site fast, secure, and up-to-date.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects (Case-Study Style) -->
+<section class="projects-section" id="work">
+    <div class="section-title fade-up">
+        <h2>Recent Work</h2>
+        <p>A look at some of the products we've shipped recently.</p>
+    </div>
+    <div class="projects-grid">
+        <div class="project-card fade-up">
+            <div class="project-image">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=600&fit=crop" alt="E-commerce Project">
+                <div class="project-image-overlay">Click to Expand →</div>
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span class="project-tag">E-Commerce</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Node.js</span>
                 </div>
-                <div class="faq-answer">
-                    Most websites are completed within 2-4 weeks, depending on complexity. Mobile apps typically take 6-10 weeks. We'll provide a detailed timeline during our initial consultation and keep you updated throughout the process.
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured online store with inventory management, Stripe payments, and a custom admin dashboard.</p>
+                <div class="case-study-details">
+                    <div class="case-row"><span class="case-label">Problem</span><span class="case-val">Client had low conversion rate (1.2%) and high cart abandonment on their legacy store.</span></div>
+                    <div class="case-row"><span class="case-label">Solution</span><span class="case-val">Redesigned checkout flow, streamlined UX, and integrated one-click payments.</span></div>
+                    <div class="case-row"><span class="case-label">Result</span><span class="case-val">+40% conversion rate &nbsp;·&nbsp; +2.3× revenue in 60 days</span></div>
+                </div>
+                <div class="project-result">40% increase in checkout conversion rate</div>
+                <a href="https://thehalosoftwork.github.io/E-commerce/" target="_blank" class="project-link">View Live Project →</a>
+            </div>
+        </div>
+        <div class="project-card fade-up">
+            <div class="project-image">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Mobile App Project">
+                <div class="project-image-overlay">Click to Expand →</div>
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span class="project-tag">Mobile App</span>
+                    <span class="project-tag">React Native</span>
+                    <span class="project-tag">Firebase</span>
+                </div>
+                <h3>Fitness Tracking App</h3>
+                <p>Cross-platform fitness app with real-time workout analytics, social features, and progress tracking.</p>
+                <div class="case-study-details">
+                    <div class="case-row"><span class="case-label">Problem</span><span class="case-val">No affordable way for the client to engage their fitness community digitally.</span></div>
+                    <div class="case-row"><span class="case-label">Solution</span><span class="case-val">Built a React Native app with real-time analytics, push notifications and social sharing.</span></div>
+                    <div class="case-row"><span class="case-label">Result</span><span class="case-val">4.8★ App Store rating &nbsp;·&nbsp; 2,000+ active users in first month</span></div>
+                </div>
+                <div class="project-result">4.8★ rating with 2,000+ active users</div>
+                <a href="https://thehalosoftwork.github.io/FitTrack-/" target="_blank" class="project-link">View Live Project →</a>
+            </div>
+        </div>
+        <div class="project-card fade-up">
+            <div class="project-image">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Business Dashboard">
+                <div class="project-image-overlay">Click to Expand →</div>
+            </div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span class="project-tag">Dashboard</span>
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">PostgreSQL</span>
+                </div>
+                <h3>Business Analytics Dashboard</h3>
+                <p>Real-time analytics platform with custom reporting, KPI tracking, and team collaboration features.</p>
+                <div class="case-study-details">
+                    <div class="case-row"><span class="case-label">Problem</span><span class="case-val">Team spent 10+ hours weekly manually compiling reports from multiple spreadsheets.</span></div>
+                    <div class="case-row"><span class="case-label">Solution</span><span class="case-val">Built a live dashboard pulling all data sources into one view with automated reporting.</span></div>
+                    <div class="case-row"><span class="case-label">Result</span><span class="case-val">10+ hrs/week saved &nbsp;·&nbsp; Real-time visibility across all KPIs</span></div>
+                </div>
+                <div class="project-result">Saved client 10+ hours/week in manual reporting</div>
+                <a href="https://thehalosoftwork.github.io/Business-Dashboard/" target="_blank" class="project-link">View Live Project →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+    <div class="section-title fade-up">
+        <h2>What Clients Say</h2>
+        <p>Real feedback from real business owners we've worked with.</p>
+    </div>
+    <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">HaloSoft delivered our e-commerce site in just 3 weeks. The quality was on par with what agencies quoted us at 4× the price. Communication was flawless throughout.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">RK</div>
+                <div>
+                    <div class="author-name">Rahul Kumar</div>
+                    <div class="author-role">Founder, StyleShop India</div>
                 </div>
             </div>
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
-                    What's included in the support?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    We include 3 months of post-launch support for fixes and minor updates. Additional support can be renewed as needed for continued assistance with your project.
-                </div>
-            </div>
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
-                    Do you offer payment plans?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    Yes! We understand cash flow is important for small businesses. We offer flexible payment plans with 50% upfront and 50% upon completion. For larger projects, we can discuss milestone-based payments.
-                </div>
-            </div>
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
-                    Will I be able to update the website myself?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    Absolutely! We build all sites with user-friendly content management systems. We'll provide training and documentation so you can make updates whenever you need. Of course, we're always here if you prefer us to handle updates.
-                </div>
-            </div>
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
-                    What makes HaloSoft different from other developers?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    We specialize in making professional development affordable for small businesses. While agencies charge $5,000-$20,000 for similar work, we offer competitive pricing without compromising quality. Plus, support is included—not an expensive add-on.
+        </div>
+        <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">We needed a custom dashboard fast. HaloSoft got it done on time, on budget, and even included extras we didn't ask for. Genuinely impressive team.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">SM</div>
+                <div>
+                    <div class="author-name">Sneha Mehta</div>
+                    <div class="author-role">Operations Lead, LogiFlow</div>
                 </div>
             </div>
         </div>
-    </section>
-
-  
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Let's Start Building</h2>
-                <p>Ready to take your business online or upgrade your existing digital presence? Get in touch today for a free consultation. We'll discuss your needs, timeline, and provide a transparent quote—no pressure, no obligation.</p>
-                <div class="contact-details">
-                    <div class="contact-detail">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <strong>Email</strong><br>
-                            thehalosoftwork@gmail.com
-                            <br>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <strong>Phone</strong><br>
-                            +91 9491206255
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">⏰</div>
-                        <div>
-                            <strong>Hours</strong><br>
-                            Mon-Fri: 9am - 6pm EST
-                        </div>
-                    </div>
+        <div class="testimonial-card fade-up">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">Our mobile app went from idea to App Store in 8 weeks. HaloSoft handled everything — design, dev, and testing. Best investment we've made for our business.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">AP</div>
+                <div>
+                    <div class="author-name">Arjun Patel</div>
+                    <div class="author-role">CEO, FitConnect</div>
                 </div>
             </div>
-           <div class="contact-form">
-    <form action="https://formspree.io/f/xnjgvdpp" method="POST">
+        </div>
+    </div>
+</section>
 
-        <div class="form-group">
-            <label>Your Name *</label>
-            <input type="text" name="name" placeholder="Enter your full name" required>
+<!-- Process Section -->
+<section class="process-section">
+    <div class="section-title fade-up">
+        <h2>How We Work</h2>
+        <p>A proven 5-step process that takes your idea from concept to revenue-generating reality.</p>
+    </div>
+    <div class="process-steps">
+        <div class="process-step fade-up" style="--step-delay:0ms">
+            <div class="process-step-icon">🔍</div>
+            <div class="process-step-num">01</div>
+            <div class="process-step-title">Discover</div>
+            <div class="process-step-desc">We learn your business, goals, and audience — so everything we build is purpose-built for results.</div>
+        </div>
+        <div class="process-step fade-up" style="--step-delay:150ms">
+            <div class="process-step-icon">🎨</div>
+            <div class="process-step-num">02</div>
+            <div class="process-step-title">Design</div>
+            <div class="process-step-desc">Wire-frames and high-fidelity mockups that you approve before a single line of code is written.</div>
+        </div>
+        <div class="process-step fade-up" style="--step-delay:300ms">
+            <div class="process-step-icon">⚙️</div>
+            <div class="process-step-num">03</div>
+            <div class="process-step-title">Build</div>
+            <div class="process-step-desc">Clean, scalable code with milestone check-ins so you always know exactly where your project stands.</div>
+        </div>
+        <div class="process-step fade-up" style="--step-delay:450ms">
+            <div class="process-step-icon">🚀</div>
+            <div class="process-step-num">04</div>
+            <div class="process-step-title">Launch</div>
+            <div class="process-step-desc">Rigorous QA, speed optimisation, and a smooth go-live — zero downtime, zero surprises.</div>
+        </div>
+        <div class="process-step fade-up" style="--step-delay:600ms">
+            <div class="process-step-icon">📈</div>
+            <div class="process-step-num">05</div>
+            <div class="process-step-title">Scale</div>
+            <div class="process-step-desc">Post-launch support, analytics review, and continuous improvements to grow your results over time.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Founder Section -->
+<section class="founder-section">
+    <div class="founder-container fade-up">
+        <div class="founder-avatar-wrap">
+            <div class="founder-avatar">HS</div>
+            <div class="founder-tag">Founder</div>
+        </div>
+        <div class="founder-content">
+            <blockquote>We built HaloSoft because we were tired of watching small businesses get overcharged and underdelivered by agencies that treated them as an afterthought.</blockquote>
+            <p>We're developers who care deeply about outcomes — not just deliverables. Every project we take on gets the same attention we'd give our own business. Real results, real communication, no fluff.</p>
+            <div class="founder-name">The HaloSoft Team</div>
+            <div class="founder-role-label">Builders. Designers. Problem solvers.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing -->
+
+<section class="pricing-section" id="pricing">
+    <div class="section-title fade-up">
+        <h2>Pricing That Fits Your Budget</h2>
+        <p>No hidden fees. No surprise invoices. Just clear, honest pricing based on what you actually need.</p>
+    </div>
+
+    <div class="pricing-urgency fade-up">
+        <span class="pricing-urgency-badge">🔥 Limited slots available this month — book your consultation now</span>
+    </div>
+
+    <div class="pricing-grid">
+        <div class="pricing-card fade-up">
+            <div class="pricing-title">Starter Website</div>
+            <span class="pricing-price-prefix">Starting from</span>
+            <div class="pricing-price">$500</div>
+            <span class="pricing-savings">Save 60% vs agencies</span>
+            <ul class="pricing-features">
+                <li>Small business website</li>
+                <li>Up to 5 pages</li>
+                <li>Contact form</li>
+                <li>Mobile-friendly &amp; fast</li>
+                <li>Redesign or new build</li>
+            </ul>
+            <button class="btn-secondary" onclick="scrollToContact()">Get Started</button>
         </div>
 
-        <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" name="email" placeholder="Enter your email address" required>
+        <div class="pricing-card featured fade-up">
+            <span class="pricing-badge">Most Popular</span>
+            <div class="pricing-title">Professional Website</div>
+            <span class="pricing-price-prefix">Starting from</span>
+            <div class="pricing-price">$900</div>
+            <span class="pricing-savings">Save up to $5,000 vs agencies</span>
+            <ul class="pricing-features">
+                <li>Unlimited pages</li>
+                <li>Custom UI/UX design</li>
+                <li>Advanced features</li>
+                <li>Priority support</li>
+                <li>Performance optimised</li>
+                <li>3 months free support</li>
+            </ul>
+            <button class="btn-primary" onclick="scrollToContact()">Get Started →</button>
         </div>
 
-        <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" name="phone" placeholder="Enter your phone number">
+        <div class="pricing-card fade-up">
+            <div class="pricing-title">Advanced / Custom</div>
+            <div class="pricing-price" style="font-size:36px;">Custom Quote</div>
+            <span class="pricing-savings">Scoped to your exact needs</span>
+            <ul class="pricing-features">
+                <li>E-commerce platforms</li>
+                <li>Web applications</li>
+                <li>Mobile apps (iOS/Android)</li>
+                <li>Third-party integrations</li>
+                <li>Dedicated support</li>
+                <li>Ongoing maintenance</li>
+            </ul>
+            <button class="btn-secondary" onclick="scrollToContact()">Request a Quote</button>
         </div>
+    </div>
+</section>
 
-        <div class="form-group">
-            <label>Tell Us About Your Project *</label>
-            <textarea name="message" required></textarea>
+<!-- CTA -->
+<section class="cta-section">
+    <div class="cta-content fade-up">
+        <h2>Ready to Build Something Great?</h2>
+        <p>Join 90+ small businesses that chose HaloSoft for professional results at a price that makes sense. Let's build your digital presence — without breaking your budget.</p>
+        <div class="cta-buttons">
+            <button class="btn-primary" onclick="scrollToContact()">Start Your Project →</button>
+            <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore Services</button>
         </div>
+    </div>
+</section>
 
-        <button type="submit" class="btn-primary" style="width:100%">
-            Send Message
-        </button>
-
-    </form>
+<!-- Color Blocks -->
+<div class="color-blocks">
+    <div class="color-block">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team">
+        <div class="color-block-overlay">
+            <h3>Collaboration</h3>
+            <p>Team-Driven Development</p>
+        </div>
+    </div>
+    <div class="color-block">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Innovation">
+        <div class="color-block-overlay">
+            <h3>Innovation</h3>
+            <p>Creative Solutions</p>
+        </div>
+    </div>
+    <div class="color-block">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Technology">
+        <div class="color-block-overlay">
+            <h3>Technology</h3>
+            <p>Cutting-Edge Stack</p>
+        </div>
+    </div>
+    <div class="color-block">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop" alt="Results">
+        <div class="color-block-overlay">
+            <h3>Results</h3>
+            <p>Measurable Impact</p>
+        </div>
+    </div>
 </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-main">
-            <div class="footer-about">
-                <div class="logo" style="margin-bottom: 20px;">
-    <img src="logos/logo main.jpg" alt="HaloSoft Logo" class="logo-img">
-    <span>HaloSoft</span>
+<!-- Info Section -->
+<section class="info-section">
+    <div class="info-grid">
+        <div class="info-item fade-up">
+            <h3>Words That Work</h3>
+            <p>Great design means nothing if the copy doesn't connect. We write result-driven content that speaks to your audience, builds trust, and moves them to act.</p>
+        </div>
+        <div class="info-item fade-up">
+            <h3>SEO That Drives Traffic</h3>
+            <p>Every site we build is structured for search engines from the ground up — clean code, fast load times, and keyword-aware content that helps you rank and get found.</p>
+        </div>
+        <div class="info-item fade-up">
+            <h3>UX Built for Humans</h3>
+            <p>We design with real user behaviour in mind — intuitive flows, clear CTAs, and layouts proven to guide visitors from interest to action without friction.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="section-title fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about working with HaloSoft.</p>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-question">How long does a typical project take? <span>+</span></div>
+            <div class="faq-answer">Most websites are completed within 2–4 weeks, depending on complexity. Mobile apps typically take 6–10 weeks. We'll give you a detailed timeline during our initial consultation and keep you updated at every stage.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-question">What's included in the post-launch support? <span>+</span></div>
+            <div class="faq-answer">All projects include 3 months of post-launch support — covering bug fixes, minor content updates, and guidance. After that, support can be renewed on a monthly basis.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-question">Do you offer payment plans? <span>+</span></div>
+            <div class="faq-answer">Yes. We offer flexible payment plans with 50% upfront and 50% on completion. For larger projects, milestone-based payments can be arranged. We make it easy.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-question">Will I be able to update the site myself? <span>+</span></div>
+            <div class="faq-answer">Absolutely. We build with user-friendly CMS tools and provide documentation and training so you can manage your content independently. Or we can handle updates for you.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-question">What makes HaloSoft different from other developers? <span>+</span></div>
+            <div class="faq-answer">We specialize in making professional-quality development accessible for small businesses. Agencies typically charge $5,000–$20,000 for similar work. We deliver comparable results at a fraction of the cost — with support included, not upsold.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-info fade-up">
+            <h2>Let's Start Building</h2>
+            <p>Ready to launch or upgrade your digital presence? Get in touch for a free consultation. We'll scope your project, share a transparent quote, and get to work — no pressure, no obligation.</p>
+            <div class="contact-details">
+                <div class="contact-detail">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:thehalosoftwork@gmail.com" style="color:inherit;">thehalosoftwork@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Phone</strong><br>
+                        +91 9491206255
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <strong>Hours</strong><br>
+                        Mon–Fri: 9am – 6pm IST
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">📅</div>
+                    <div>
+                        <strong>Book a Call</strong><br>
+                        <a href="https://wa.me/919491206255?text=Hi%20HaloSoft!%20I%27d%20like%20to%20book%20a%20free%20consultation." target="_blank" style="color:var(--accent-2);text-decoration:none;font-weight:600;">Schedule on WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form fade-up">
+            <!-- Formspree — event.preventDefault() removed as per guide -->
+            <form action="https://formspree.io/f/xnjgvdpp" method="POST">
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label>Tell Us About Your Project *</label>
+                    <textarea name="message" placeholder="Describe your project, goals, and any specific requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+                    Send Message →
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-main">
+        <div class="footer-about">
+            <div class="logo">
+                <img src="logos/logo main.jpg" alt="HaloSoft Logo" class="logo-img">
+                <span>HaloSoft</span>
+            </div>
+            <p>Empowering small businesses with professional web and mobile development. Agency quality, affordable pricing.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Services</h4>
+            <div class="footer-links">
+                <a href="#services">Web Development</a>
+                <a href="#services">Mobile Apps</a>
+                <a href="#services">E-Commerce</a>
+                <a href="#services">UI/UX Design</a>
+                <a href="#services">Maintenance</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <div class="footer-links">
+                <a href="#">Case Studies</a>
+                <a href="#">Documentation</a>
+                <a href="#">Support Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-text">
+                <h4>Get free tips to grow your business online</h4>
+                <p>No spam. Just occasional insights on web, design & growth.</p>
+            </div>
+            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe →</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-social">
+  <a href="https://discord.gg/BGCPAmchjn" class="social-icon" title="Discord" target="_blank">
+    <img src="logos/dis.png" alt="Discord">
+  </a>
+  <a href="https://www.linkedin.com/company/thehalosoft/" class="social-icon" title="LinkedIn" target="_blank">
+    <img src="logos/in.png" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/thehalosoftwork" class="social-icon github" title="GitHub" target="_blank">
+    <img src="logos/gh.png" alt="GitHub">
+  </a>
+  <a href="https://www.instagram.com/thehalosoft" class="social-icon" title="Instagram" target="_blank">
+    <img src="logos/insta.png" alt="Instagram">
+  </a>
 </div>
-                <p>Empowering small businesses with affordable, professional web and mobile development. Quality doesn't have to cost a fortune.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Services</h4>
-                <div class="footer-links">
-                    <a href="#services">Web Development</a>
-                    <a href="#services">Mobile Apps</a>
-                    <a href="#services">E-Commerce</a>
-                    <a href="#services">UI/UX Design</a>
-                    <a href="#services">Maintenance</a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <div class="footer-links">
-                    <a href="#about">About Us</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Careers</a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h4>Resources</h4>
-                <div class="footer-links">
-                    <a href="#">Case Studies</a>
-                    <a href="#">Documentation</a>
-                    <a href="#">Support Center</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 HaloSoft. All rights reserved. Built with passion and code.</p>
-            <div class="footer-social">
-                <a href="https://discord.gg/75dWQEHb" class="social-icon" title="Discord">Ⓓ</a>
-                <a href="https://www.linkedin.com/company/thehalosoft/" target="_blank" class="social-icon" title="LinkedIn">in</a>
-                <a href="https://github.com/thehalosoftwork" class="social-icon" title="GitHub">⚡</a>
-                <a href="https://www.instagram.com/thehalosoft" target="_blank" class="social-icon" title="Instagram">📷</a>
-            </div>
-        </div>
-    </footer>
+    </div>
+    <div style="text-align:center;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.07);">
+        <p style="font-size:15px;color:#8b8b9e;margin-bottom:18px;">Ready to build something great? We'd love to hear about your project.</p>
+        <button class="btn-primary" onclick="scrollToContact()" style="margin:0 auto;">Get Your Free Consultation →</button>
+        <p style="font-size:13px;color:#5a5a70;margin-top:20px;">&copy; 2026 HaloSoft &nbsp;·&nbsp; <a href="mailto:thehalosoftwork@gmail.com" style="color:#5a5a70;text-decoration:none;">thehalosoftwork@gmail.com
+        </p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
